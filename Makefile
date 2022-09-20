@@ -7,3 +7,5 @@ lint:
 	pylint --disable=R,C,E0001,W0613,E1120 hello.py
 test:
 	python -m pytest -vv test_hello.py
+all:
+	install lint test
